@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="1" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-26T15:27:16 IST" name="Default suite" finished-at="2025-12-26T15:28:05 IST" duration-ms="48827">
+    <groups>
+    </groups>
+    <test started-at="2025-12-26T15:27:16 IST" name="Default test" finished-at="2025-12-26T15:28:05 IST" duration-ms="48827">
+      <class name="com.runner.Test_class">
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.runner.Test_class@223191a6]" started-at="2025-12-26T15:27:04 IST" name="launch" finished-at="2025-12-26T15:27:16 IST" duration-ms="12443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="validLogin()[pri:1, instance:com.runner.Test_class@223191a6]" started-at="2025-12-26T15:27:17 IST" name="validLogin" finished-at="2025-12-26T15:27:19 IST" duration-ms="2099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method signature="profileUpdate()[pri:2, instance:com.runner.Test_class@223191a6]" started-at="2025-12-26T15:27:19 IST" name="profileUpdate" finished-at="2025-12-26T15:27:25 IST" duration-ms="6479" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error : occurred while element click:element click intercepted: Element <img alt="naukri user profile img" class="nI-gNb-icon-img" src="https://static.naukimg.com/s/0/0/i/ni-gnb-revamped/userdp_v1.svg"> is not clickable at point (1242, 37). Other element would receive the click: <div class="chatbot_Nav" id="_74zdr8hiiNavbar">...</div>
+  (Session info: chrome=143.0.7499.148)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98745f1acaa014205eebf10ef909fd86, clickElement {id=f.E1419395ECADE685AB7B01F6612F2EBB.d.0444583A3F9ED4435F18858BDA880CE2.e.58}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/f_/nf9zkn651bx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50363}, goog:processID: 2976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50363/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (98745f1acaa014205eebf10ef909fd86)] -> class name: nI-gNb-icon-img]
+Session ID: 98745f1acaa014205eebf10ef909fd86]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error : occurred while element click:element click intercepted: Element <img alt="naukri user profile img" class="nI-gNb-icon-img" src="https://static.naukimg.com/s/0/0/i/ni-gnb-revamped/userdp_v1.svg"> is not clickable at point (1242, 37). Other element would receive the click: <div class="chatbot_Nav" id="_74zdr8hiiNavbar">...</div>
+  (Session info: chrome=143.0.7499.148)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98745f1acaa014205eebf10ef909fd86, clickElement {id=f.E1419395ECADE685AB7B01F6612F2EBB.d.0444583A3F9ED4435F18858BDA880CE2.e.58}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/f_/nf9zkn651bx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50363}, goog:processID: 2976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50363/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (98745f1acaa014205eebf10ef909fd86)] -> class name: nI-gNb-icon-img]
+Session ID: 98745f1acaa014205eebf10ef909fd86
+at org.junit.Assert.fail(Assert.java:89)
+at com.Base.Base_class.elementClick(Base_class.java:107)
+at com.PageObjectModule.ProfileUpdate.ProfileUpdate(ProfileUpdate.java:38)
+at com.runner.Test_class.profileUpdate(Test_class.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileUpdate -->
+        <test-method signature="ResumeHeadLinePage()[pri:3, instance:com.runner.Test_class@223191a6]" started-at="2025-12-26T15:27:25 IST" name="ResumeHeadLinePage" finished-at="2025-12-26T15:27:39 IST" duration-ms="13479" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error : occurred while element click:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.148)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98745f1acaa014205eebf10ef909fd86, findElement {value=//span[normalize-space(text())='Add resume headline'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/f_/nf9zkn651bx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50363}, goog:processID: 2976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50363/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 98745f1acaa014205eebf10ef909fd86]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error : occurred while element click:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.148)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98745f1acaa014205eebf10ef909fd86, findElement {value=//span[normalize-space(text())='Add resume headline'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/f_/nf9zkn651bx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50363}, goog:processID: 2976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50363/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 98745f1acaa014205eebf10ef909fd86
+at org.junit.Assert.fail(Assert.java:89)
+at com.Base.Base_class.elementClick(Base_class.java:107)
+at com.PageObjectModule.ResumeHeadLinePage.ResumeHeadLinePage(ResumeHeadLinePage.java:35)
+at com.runner.Test_class.ResumeHeadLinePage(Test_class.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResumeHeadLinePage -->
+        <test-method signature="KeySkillsPage()[pri:4, instance:com.runner.Test_class@223191a6]" started-at="2025-12-26T15:27:39 IST" name="KeySkillsPage" finished-at="2025-12-26T15:27:52 IST" duration-ms="13285" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error : occurred while element click:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.148)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98745f1acaa014205eebf10ef909fd86, findElement {value=(//span[normalize-space()='Key skills'])/following-sibling::span[text()='editOneTheme'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/f_/nf9zkn651bx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50363}, goog:processID: 2976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50363/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 98745f1acaa014205eebf10ef909fd86]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error : occurred while element click:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.148)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98745f1acaa014205eebf10ef909fd86, findElement {value=(//span[normalize-space()='Key skills'])/following-sibling::span[text()='editOneTheme'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/f_/nf9zkn651bx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50363}, goog:processID: 2976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50363/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 98745f1acaa014205eebf10ef909fd86
+at org.junit.Assert.fail(Assert.java:89)
+at com.Base.Base_class.elementClick(Base_class.java:107)
+at com.PageObjectModule.KeySkillsPage.KeySkillsPage(KeySkillsPage.java:37)
+at com.runner.Test_class.KeySkillsPage(Test_class.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeySkillsPage -->
+        <test-method signature="EmployeementPage()[pri:5, instance:com.runner.Test_class@223191a6]" started-at="2025-12-26T15:27:52 IST" name="EmployeementPage" finished-at="2025-12-26T15:28:05 IST" duration-ms="13241" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error : occurred while element click:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.148)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98745f1acaa014205eebf10ef909fd86, findElement {value=//span[normalize-space(text())='Add employment'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/f_/nf9zkn651bx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50363}, goog:processID: 2976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50363/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 98745f1acaa014205eebf10ef909fd86]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error : occurred while element click:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.148)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98745f1acaa014205eebf10ef909fd86, findElement {value=//span[normalize-space(text())='Add employment'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/f_/nf9zkn651bx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50363}, goog:processID: 2976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50363/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 98745f1acaa014205eebf10ef909fd86
+at org.junit.Assert.fail(Assert.java:89)
+at com.Base.Base_class.elementClick(Base_class.java:107)
+at com.PageObjectModule.EmployeementPage.EmployeementPage(EmployeementPage.java:46)
+at com.runner.Test_class.EmployeementPage(Test_class.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmployeementPage -->
+        <test-method is-config="true" signature="logoutPage()[pri:0, instance:com.runner.Test_class@223191a6]" started-at="2025-12-26T15:28:06 IST" name="logoutPage" finished-at="2025-12-26T15:28:06 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutPage -->
+      </class> <!-- com.runner.Test_class -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="dropdown.drop">
+        <methods>
+          <include name="searchAmazon"/>
+          <include name="setUp"/>
+          <include name="sanity"/>
+          <include name="dropdown"/>
+          <include name="tearDown"/>
+          <include name="watch"/>
+        </methods>
+      </class> <!-- dropdown.drop -->
+      <class name="dropdown.switchwindow">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="searchAmazon"/>
+        </methods>
+      </class> <!-- dropdown.switchwindow -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,1 @@
+{"uuid":"b17cbabf-72ae-4900-9293-32052b5dd470","name":"amazonpage.ScreenshotTest.setUp","children":["e2006b17-ed3a-40c0-93ad-debe461f955b"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1770011270294,"stop":1770011276088}],"afters":[],"start":1770011270292,"stop":1770011276089}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-02T11:06:06 IST" name="Default suite" finished-at="2026-02-02T11:06:15 IST" duration-ms="8339">
+    <groups>
+    </groups>
+    <test started-at="2026-02-02T11:06:06 IST" name="Default test" finished-at="2026-02-02T11:06:15 IST" duration-ms="8339">
+      <class name="Amazon_window.Amazon_window.Windowhandles">
+        <test-method is-config="true" signature="launch()[pri:0, instance:Amazon_window.Amazon_window.Windowhandles@2ef3eef9]" started-at="2026-02-02T11:05:56 IST" name="launch" finished-at="2026-02-02T11:06:06 IST" duration-ms="10477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method is-config="true" signature="searchproduct()[pri:0, instance:Amazon_window.Amazon_window.Windowhandles@2ef3eef9]" started-at="2026-02-02T11:06:07 IST" name="searchproduct" finished-at="2026-02-02T11:06:12 IST" duration-ms="5390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchproduct -->
+        <test-method signature="firstproduct()[pri:1, instance:Amazon_window.Amazon_window.Windowhandles@2ef3eef9]" started-at="2026-02-02T11:06:12 IST" name="firstproduct" finished-at="2026-02-02T11:06:15 IST" duration-ms="2759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstproduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Amazon_window.Amazon_window.Windowhandles@2ef3eef9]" started-at="2026-02-02T11:06:15 IST" name="teardown" finished-at="2026-02-02T11:06:16 IST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Amazon_window.Amazon_window.Windowhandles -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
