@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="9.859" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Check website functionality" name="Verify the login functionality of the website" time="9.621">
+<system-out><![CDATA[
+Given User as to launch the chrome browser..................................passed
+When User opens the URL.....................................................passed
+Then wait till the product was dispaly......................................passed
+Then add to cart............................................................passed
+Then Accept the popup.......................................................passed
+When product added in the cart click on the cart icon.......................passed
+]]></system-out>
+</testcase>
+</testsuite>
